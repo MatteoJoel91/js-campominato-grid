@@ -6,6 +6,7 @@
 // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro. 
 
 let button_play = document.getElementById("Play");
+const gridElement = document.getElementById('grid');
 
 button_play.addEventListener('click',    
     function() {
@@ -33,4 +34,3 @@ button_play.addEventListener('click',
         
     }
 );
-
