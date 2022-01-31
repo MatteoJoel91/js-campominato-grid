@@ -53,18 +53,22 @@ main{
     width: calc(100% / 10);
     height: calc(100% / 10);
     float: left;
-    text-align: center;
     color: black;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .square-medio{
     border: solid 1px #fff;
     width: calc(100% / 9);
     height: calc(100% / 9);
     float: left;
-    text-align: center;
     color: black;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     display: none;
 }
 .square-difficile{
@@ -72,9 +76,11 @@ main{
     width: calc(100% / 7);
     height: calc(100% / 7);
     float: left;
-    text-align: center;
     color: black;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     display: none;
 }
 

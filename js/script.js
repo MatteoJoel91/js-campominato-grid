@@ -17,9 +17,9 @@ const createGridElement = () => {
 for (let i = 1; i<=100; i++) {
     console.log(i);
     
-
     const node = createGridElement();
-
+    node.innerHTML = i;
+    
     node.addEventListener('click', function() {
         console.log(this);
         this.classList.add('clicked');
