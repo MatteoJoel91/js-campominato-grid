@@ -11,7 +11,6 @@ const gridElement = document.getElementById('grid');
 const createGridElement = () => {
     const node = document.createElement('div');
     node.classList.add('square-facile');
-    node.classList.add('numeri');
     return node;
 }
 

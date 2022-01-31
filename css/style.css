@@ -53,13 +53,18 @@ main{
     width: calc(100% / 10);
     height: calc(100% / 10);
     float: left;
-    
+    text-align: center;
+    color: black;
+    vertical-align: middle;
 }
 .square-medio{
     border: solid 1px #fff;
     width: calc(100% / 9);
     height: calc(100% / 9);
     float: left;
+    text-align: center;
+    color: black;
+    vertical-align: middle;
     display: none;
 }
 .square-difficile{
@@ -67,13 +72,12 @@ main{
     width: calc(100% / 7);
     height: calc(100% / 7);
     float: left;
-    display: none;
-}
-#numeri{
     text-align: center;
     color: black;
     vertical-align: middle;
+    display: none;
 }
+
 .clicked {
     background-color: aquamarine;
 }
