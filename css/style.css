@@ -48,42 +48,43 @@ main{
     content: "";
     clear: both;
 }
-.square-facile{
+.box-facile{
     border: solid 1px #fff;
     width: calc(100% / 10);
     height: calc(100% / 10);
     float: left;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 50px;
     cursor: pointer;
+    
 }
-.square-medio{
+.box-medio{
     border: solid 1px #fff;
     width: calc(100% / 9);
     height: calc(100% / 9);
     float: left;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 50px;
     cursor: pointer;
-    display: none;
 }
-.square-difficile{
+.box-difficile{
     border: solid 1px #fff;
     width: calc(100% / 7);
     height: calc(100% / 7);
     float: left;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 50px;
     cursor: pointer;
+}
+.box-facile.active, .box-medio.active, .box-difficile.active{
+    display: block;
+}
+.box-facile.d-none, .box-medio.d-none, .box-difficile.d-none{
     display: none;
 }
-
 .clicked {
     background-color: limegreen;
     color: white;
