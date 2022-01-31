@@ -25,6 +25,9 @@ header h1{
 #Difficoltà{
     width: 150px;
 }
+.scelta{
+    color: lightgray;
+}
 #Play, #Reset{
     width: 100px;
 }
@@ -41,7 +44,6 @@ main{
 .container {
     width: 500px;
     height: 500px;
-    border: solid 1px #fff;
 }
 #grid::after {
     display: block;
@@ -81,7 +83,9 @@ main{
     align-items: center;
     cursor: pointer;
 }
-
+.d-none{
+    display: none;
+}
 .clicked {
     background-color: limegreen;
     color: white;
