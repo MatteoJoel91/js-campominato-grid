@@ -11,7 +11,7 @@ const gridElement = document.getElementById('grid');
 
 let numero_box = 100;
 
-const createGridElement = () => {
+const crea_griglia = () => {
 
     var valore_selezionato = document.getElementById('Difficoltà').value;
     
@@ -20,24 +20,19 @@ const createGridElement = () => {
     if (valore_selezionato == 'Facile') {
         numero_box = 100;
         node.classList.add('box-facile');
-        node.classList.remove('box-medio');
-        node.classList.remove('box-difficile');
 
     }else if(valore_selezionato == 'Medio'){
         numero_box = 81;
         node.classList.add('box-medio');
-        node.classList.remove('box-facile');
-        node.classList.remove('box-difficile');
         
     }else{
         numero_box = 49;
         node.classList.add('box-difficile');
-        node.classList.remove('box-facile');
-        node.classList.remove('box-medio');
     }
 
     return node;
 }
+
 
 button_play.addEventListener('click',
     
@@ -45,7 +40,7 @@ button_play.addEventListener('click',
         
         for (let i = 1; i<=numero_box; i++) {
         
-            const node = createGridElement();
+            const node = crea_griglia();
             node.innerHTML = i;
         
             node.addEventListener('click', function() {
