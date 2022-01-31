@@ -25,7 +25,7 @@ header h1{
 #Difficoltà{
     width: 150px;
 }
-#Play{
+#Play, #Reset{
     width: 100px;
 }
 
@@ -54,8 +54,9 @@ main{
     height: calc(100% / 10);
     float: left;
     color: black;
-    text-align: center;
-    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .box-medio{
@@ -64,8 +65,9 @@ main{
     height: calc(100% / 9);
     float: left;
     color: black;
-    text-align: center;
-    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .box-difficile{
@@ -74,16 +76,12 @@ main{
     height: calc(100% / 7);
     float: left;
     color: black;
-    text-align: center;
-    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
-.box-facile.active, .box-medio.active, .box-difficile.active{
-    display: block;
-}
-.box-facile.d-none, .box-medio.d-none, .box-difficile.d-none{
-    display: none;
-}
+
 .clicked {
     background-color: limegreen;
     color: white;

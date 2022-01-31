@@ -7,6 +7,8 @@
 
 let button_play = document.getElementById("Play");
 
+let button_reset = document.getElementById("Reset");
+
 const gridElement = document.getElementById('grid');
 
 let numero_box = 100;
@@ -25,7 +27,7 @@ const crea_griglia = () => {
         numero_box = 81;
         node.classList.add('box-medio');
         
-    }else{
+    }else {
         numero_box = 49;
         node.classList.add('box-difficile');
     }
@@ -35,7 +37,7 @@ const crea_griglia = () => {
 
 
 button_play.addEventListener('click',
-    
+
     function() {
         
         for (let i = 1; i<=numero_box; i++) {
@@ -56,3 +58,8 @@ button_play.addEventListener('click',
     
 );
 
+button_reset.addEventListener('click',
+    function(){    
+        button_reset = window.location.reload();
+    }
+);
