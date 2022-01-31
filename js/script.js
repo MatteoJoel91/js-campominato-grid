@@ -7,25 +7,30 @@
 
 let button_play = document.getElementById("Play");
 
-const gridElement = document.getElementById('grid');
+button_play.addEventListener('click',    
+    function() {
 
-const createGridElement = () => {
-    const node = document.createElement('div');
-    node.classList.add('square-facile');
-    return node;
-}
+        const createGridElement = () => {
+        const node = document.createElement('div');
+        node.classList.add('square-facile');
+        return node;
+    }
 
-for (let i = 1; i<=100; i++) {
-    console.log(i);
-    
-    const node = createGridElement();
-    node.innerHTML = i;
+    for (let i = 1; i<=100; i++) {
+        console.log(i);
+        
+        const node = createGridElement();
+        node.innerHTML = i;
 
-    node.addEventListener('click', function() {
-        console.log(this);
-        this.classList.add('clicked');
-        }
-    );
-    gridElement.appendChild(node);
+        node.addEventListener('click', function() {
+            console.log(this);
+            this.classList.add('clicked');
+            }
+        );
+        gridElement.appendChild(node);
 
-}
+    }
+        
+    }
+);
+
