@@ -48,15 +48,36 @@ main{
     content: "";
     clear: both;
 }
-.square {
+.square-facile{
     border: solid 1px #fff;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     float: left;
+    
+}
+.square-medio{
+    border: solid 1px #fff;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    float: left;
+    display: none;
+}
+.square-difficile{
+    border: solid 1px #fff;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    float: left;
+    display: none;
+}
+.numeri{
+    text-align: center;
+    color: black;
+    vertical-align: middle;
 }
 .clicked {
     background-color: aquamarine;
 }
+
 
 /* Regole footer */
 footer{
