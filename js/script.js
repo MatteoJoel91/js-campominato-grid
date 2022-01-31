@@ -5,6 +5,7 @@
 // con difficoltà 3 => tra 1 e 49
 // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro. 
 
+let button_play = document.getElementById("Play");
 
 const gridElement = document.getElementById('grid');
 
@@ -19,7 +20,7 @@ for (let i = 1; i<=100; i++) {
     
     const node = createGridElement();
     node.innerHTML = i;
-    
+
     node.addEventListener('click', function() {
         console.log(this);
         this.classList.add('clicked');
